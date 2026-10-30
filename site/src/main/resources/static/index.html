@@ -1,12 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portifólio de Programação - Ana Beatriz Monteiro</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>anabeatriz.js | Portfólio</title>
+    
+    <!-- Fonte Google: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <h1>Bem-vindo ao meu Portifólio</h1>
+
+    <!-- Cabeçalho / Navbar -->
+    <header class="header">
+        <div class="logo">
+            <span class="code-symbol">&lt;/&gt;</span>
+            <span class="logo-text">anabeatriz.js</span>
+        </div>
+        <nav class="nav">
+            <a href="#sobre" class="nav-link">Sobre</a>
+            <a href="#linguagens" class="nav-link">Linguagens</a>
+        </nav>
+    </header>
+
+    <!-- Seção Principal / Hero -->
+    <section class="hero-section" id="sobre">
+        <div class="hero-content">
+            <h1 class="hero-title">Transformando ideias em código.</h1>
+            <p class="hero-subtitle">
+                Explorando linguagens de programação, criando soluções e desenvolvendo novas possibilidades através da tecnologia.
+            </p>
+            <p class="hero-author">Ana Beatriz — Desenvolvedora em formação</p>
+        </div>
+        <div class="hero-illustration">
+            <!-- Forma da estrela de fundo -->
+            <svg class="star-bg" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M250 0L310 170H490L345 275L400 450L250 340L100 450L155 275L10 170H190L250 0Z" fill="#03002e"/>
+            </svg>
+            <!-- Ilustração SVGs/Imagem da desenvolvedora -->
+            <div class="character-illustration">
+                <svg viewBox="0 0 300 300" class="dev-avatar">
+                    <!-- Ilustração simulada da pessoa com notebook -->
+                    <g transform="translate(20, 40)">
+                        <!-- Cabelo -->
+                        <path d="M 80 120 C 60 70, 190 70, 170 120 C 180 170, 180 200, 150 200 C 130 180, 80 170, 80 120 Z" fill="#e2ad58"/>
+                        <!-- Rosto -->
+                        <ellipse cx="130" cy="120" rx="30" ry="35" fill="#fbd2be"/>
+                        <circle cx="120" cy="115" r="3" fill="#333"/>
+                        <circle cx="140" cy="115" r="3" fill="#333"/>
+                        <path d="M 125 132 Q 130 137 135 132" stroke="#d47069" stroke-width="2" fill="none"/>
+                        <!-- Blusa Laranja -->
+                        <path d="M 70 200 C 70 160, 190 160, 190 200 L 210 260 L 50 260 Z" fill="#d86338"/>
+                        <!-- Braços e Laptop -->
+                        <path d="M 100 210 L 150 230 L 200 210" stroke="#fbd2be" stroke-width="14" stroke-linecap="round"/>
+                        <rect x="140" y="200" width="110" height="65" rx="5" fill="#758197" transform="rotate(-10 140 200)"/>
+                        <rect x="130" y="250" width="120" height="10" rx="3" fill="#9ca8ba"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Linguagens -->
+    <section class="languages-section" id="linguagens">
+        <h2 class="section-title">Linguagens que conheço</h2>
+        <p class="section-subtitle">
+            Cada linguagem tem seu propósito. Aqui estão as tecnologias que já aprendi e utilizo em meus projetos.
+        </p>
+
+        <div class="cards-grid">
+            <!-- Card Python -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-brands fa-python card-icon"></i>
+                    <h3 class="card-title">Python</h3>
+                </div>
+                <p class="card-text">
+                    Linguagem versátil e de fácil aprendizado, muito usada em automação, análise de dados, IA e desenvolvimento web.
+                </p>
+            </div>
+
+            <!-- Card CSS -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-brands fa-css3-alt card-icon"></i>
+                    <h3 class="card-title">CSS</h3>
+                </div>
+                <p class="card-text">
+                    Responsável pela estilização das páginas, tornando a interface visual e organizada para o usuário.
+                </p>
+            </div>
+
+            <!-- Card JavaScript -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-brands fa-js card-icon"></i>
+                    <h3 class="card-title">JavaScript</h3>
+                </div>
+                <p class="card-text">
+                    Torna as páginas interativas e dinâmicas, sendo essencial para o desenvolvimento web no front-end e no back-end.
+                </p>
+            </div>
+
+            <!-- Card Java -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-brands fa-java card-icon"></i>
+                    <h3 class="card-title">Java</h3>
+                </div>
+                <p class="card-text">
+                    Linguagem robusta e amplamente utilizada em aplicações corporativas, Android e sistemas de grande escala.
+                </p>
+            </div>
+
+            <!-- Card HTML -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-brands fa-html5 card-icon"></i>
+                    <h3 class="card-title">HTML</h3>
+                </div>
+                <p class="card-text">
+                    Define a estrutura das páginas web, organizando o conteúdo de forma semântica e acessível.
+                </p>
+            </div>
+
+            <!-- Card C -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="c-icon font-icon">C</span>
+                    <h3 class="card-title">C</h3>
+                </div>
+                <p class="card-text">
+                    Linguagem de baixo nível, com foco em desempenho e controle de hardware, muito usada em sistemas operacionais e embarcados.
+                </p>
+            </div>
+
+            <!-- Card SQL -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-solid fa-database card-icon"></i>
+                    <h3 class="card-title">SQL</h3>
+                </div>
+                <p class="card-text">
+                    É a linguagem usada para manipular e consultar dados em bancos de dados relacionais.
+                </p>
+            </div>
+
+            <!-- Card PHP -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-brands fa-php card-icon"></i>
+                    <h3 class="card-title">PHP</h3>
+                </div>
+                <p class="card-text">
+                    Muito utilizada no desenvolvimento web, especialmente no back-end e em sistemas dinâmicos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arquivo JavaScript -->
+    <script src="/js/script.js"></script>
 </body>
 </html>

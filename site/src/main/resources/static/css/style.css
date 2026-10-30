@@ -1,8 +1,217 @@
-body{
-    background-color: #0b0624;
-    color: #a696f2;
+/* Reset básico de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-h1{
-    text-align: center;
+body {
+    background-color: #03002e;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* --- Cabeçalho --- */
+.header {
+    background-color: #cbdaf6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #03002e;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.code-symbol {
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #03002e;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: opacity 0.3s;
+}
+
+.nav-link:hover {
+    opacity: 0.7;
+}
+
+/* --- Seção Hero / Banner Superior --- */
+.hero-section {
+    background-color: #cbdaf6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8% 80px 8%;
+    position: relative;
+    min-height: 480px;
+}
+
+.hero-content {
+    max-width: 55%;
+    z-index: 2;
+}
+
+.hero-title {
+    color: #03002e;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    color: #e6008b;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.hero-author {
+    color: #636a80;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.hero-illustration {
+    position: relative;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star-bg {
+    position: absolute;
+    width: 140%;
+    right: -20%;
+    top: -120px;
+    z-index: 1;
+}
+
+.character-illustration {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 320px;
+}
+
+.dev-avatar {
+    width: 100%;
+    height: auto;
+}
+
+/* --- Seção de Linguagens --- */
+.languages-section {
+    background-color: #03002e;
+    padding: 60px 8% 80px 8%;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.section-subtitle {
+    color: #e6008b;
+    font-size: 1.05rem;
+    font-weight: 600;
+    max-width: 600px;
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
+
+/* Grid de Cards */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #04013d;
+    border: 1px solid #14125c;
+    border-radius: 10px;
+    padding: 25px 20px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #e6008b;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.card-icon {
+    font-size: 1.8rem;
+    color: #e6008b;
+}
+
+.c-icon {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #e6008b;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.card-text {
+    font-size: 0.85rem;
+    color: #aeb4c6;
+    line-height: 1.5;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 1024px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    .hero-title {
+        font-size: 2rem;
+    }
+    .hero-illustration {
+        width: 80%;
+    }
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
 }
